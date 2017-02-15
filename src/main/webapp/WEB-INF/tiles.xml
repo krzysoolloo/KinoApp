@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition" template="/WEB-INF/views/layout.jsp">
+        <put-attribute name="title" value="SuperKino - witamy!"></put-attribute>
+        <put-attribute name="stylecss" value="/WEB-INF/views/firststylecss.jsp"></put-attribute>
+        <put-attribute name="header" value=""></put-attribute>
+        <put-attribute name="body" value=""></put-attribute>
+        <put-attribute name="footer" value="/WEB-INF/views/firstfooter.jsp"></put-attribute>
+        <put-attribute name="scriptjs" value="/WEB-INF/views/firstscriptjs.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="firstpage" extends="base.definition">
+        <put-attribute name="title" value="FrameworkOnly | First Page"></put-attribute>
+        <put-attribute name="header" value="/WEB-INF/views/firstheader.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/firstbody.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="homepage" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/home.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="adminpage" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/admin.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="userpage" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/user.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="login" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="registration" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/registration.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="registrationok" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/registrationok.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="forgotpassword" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/forgotpassword.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="newpassword" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/newpassword.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="cinemahalls" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/cinemahalls.jsp"></put-attribute>
+    </definition>
+    
+        <definition name="movies" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/movies.jsp"></put-attribute>
+    </definition>
+    
+            <definition name="movies2" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/movies2.jsp"></put-attribute>
+    </definition>
+    
+        <definition name="addmovies" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/addmovies.jsp"></put-attribute>
+    </definition>
+    
+            <definition name="editmovies" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/editmovies.jsp"></put-attribute>
+    </definition>
+    
+   <definition name="movie" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/movie.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="showings" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/showings.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="addshowings" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/addshowings.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="editshowings" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/editshowings.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="show" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/show.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="reservations" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/reservations.jsp"></put-attribute>
+    </definition>
+    
+   <definition name="403" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/403.jsp"></put-attribute>
+    </definition>
+</tiles-definitions>
